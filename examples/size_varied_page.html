@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<style>
+.large_circle {
+    height: 100px;
+    width: 100px;
+    background-color: #555;
+    border-radius: 50%;
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    background-color: #555;
+    border-radius: 50%;
+}
+
+.large_circle-up {
+    height: 100px;
+    width: 100px;
+    background-color: #555;
+    border-radius: 50%;
+}
+
+.circle-up {
+    height: 50px;
+    width: 50px;
+    background-color: #555;
+    border-radius: 50%;
+}
+
+.large_circle-down {
+    height: 100px;
+    width: 100px;
+    background-color: #555;
+    border-radius: 50%;
+}
+
+.circle-down {
+    height: 50px;
+    width: 50px;
+    background-color: #555;
+    border-radius: 50%;
+}
+
+.large_circle-left {
+    height: 100px;
+    width: 100px;
+    background-color: #555;
+    border-radius: 50%;
+}
+
+.circle-left {
+    height: 50px;
+    width: 50px;
+    background-color: #555;
+    border-radius: 50%;
+}
+
+.large_circle-right {
+    height: 100px;
+    width: 100px;
+    background-color: #555;
+    border-radius: 50%;
+}
+
+.circle-right {
+    height: 50px;
+    width: 50px;
+    background-color: #555;
+    border-radius: 50%;
+}
+
+.large_square {
+  height: 100px;
+  width: 100px;
+  background-color: #555;
+}
+
+.square {
+  height: 50px;
+  width: 50px;
+  background-color: #555;
+}
+
+.large_square-up {
+  height: 100px;
+  width: 100px;
+  background-color: #555;
+}
+
+.square-up {
+  height: 50px;
+  width: 50px;
+  background-color: #555;
+}
+
+.large_square-down {
+  height: 100px;
+  width: 100px;
+  background-color: #555;
+}
+
+.square-down {
+  height: 50px;
+  width: 50px;
+  background-color: #555;
+}
+
+.large_square-left {
+  height: 100px;
+  width: 100px;
+  background-color: #555;
+}
+
+.square-left {
+  height: 50px;
+  width: 50px;
+  background-color: #555;
+}
+
+.large_square-right {
+  height: 100px;
+  width: 100px;
+  background-color: #555;
+}
+
+.square-right {
+  height: 50px;
+  width: 50px;
+  background-color: #555;
+}
+
+.large_trapezoid {
+	border-bottom: 100px solid #555;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	height: 0;
+	width: 250px;
+}
+
+.trapezoid {
+	border-bottom: 50px solid #555;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 125px;
+}
+
+.large_trapezoid-up {
+	border-bottom: 100px solid #555;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	height: 0;
+	width: 250px;
+}
+
+.trapezoid-up {
+	border-bottom: 50px solid #555;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 125px;
+}
+
+.large_trapezoid-down {
+	border-bottom: 100px solid #555;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	height: 0;
+	width: 250px;
+}
+
+.trapezoid-down {
+	border-bottom: 50px solid #555;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 125px;
+}
+
+.large_trapezoid-left {
+	border-bottom: 100px solid #555;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	height: 0;
+	width: 250px;
+}
+
+.trapezoid-left {
+	border-bottom: 50px solid #555;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 125px;
+}
+
+.large_trapezoid-right {
+	border-bottom: 100px solid #555;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	height: 0;
+	width: 250px;
+}
+
+.trapezoid-right {
+	border-bottom: 50px solid #555;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 125px;
+}
+
+.large_triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid #555;
+}
+
+.triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid #555;
+}
+
+.large_triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 100px solid #555;
+}
+
+.triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 50px solid #555;
+}
+
+.large_triangle-left {
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-right: 100px solid #555;
+	border-bottom: 50px solid transparent;
+}
+
+.triangle-left {
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-right: 50px solid #555;
+	border-bottom: 25px solid transparent;
+}
+
+.large_triangle-right {
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-left: 100px solid #555;
+	border-bottom: 50px solid transparent;
+}
+
+.triangle-right {
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-left: 50px solid #555;
+	border-bottom: 25px solid transparent;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+}
+</style>
+
+<table class="center">
+
+<caption>
+    We love putting shapes in our websites!
+</caption>
+
+<tr>
+<td>
+    <div class="large_circle-up">
+    </div>
+</td>
+<td>
+    <div class="circle-up">
+    </div>
+</td>
+<td>
+    <div class="large_circle-up">
+    </div>
+</td>
+</tr>
+
+<tr>
+    <td>
+        <div class="circle-up">
+        </div>
+    </td>
+    <td>
+        <div class="large_circle-up">
+        </div>
+    </td>
+    <td>
+        <div class="circle-up">
+        </div>
+    </td>
+</tr>
+
+<tr>
+    <td>
+        <div class="large_circle-up">
+        </div>
+    </td>
+    <td>
+        <div class="circle-up">
+        </div>
+    </td>
+    <td>
+        <div class="circle-up">
+        </div>
+    </td>
+</tr>
+
+</table>
+
+</body>
+</html>
